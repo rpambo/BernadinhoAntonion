@@ -1,0 +1,47 @@
+@keyframes textura {
+    0% { background-position-x: 0%; }
+    100% { background-position-x: 100%; }
+}
+
+.uk-button-primary {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    outline: 2px solid #d976004d;
+    outline-offset: 8px;
+    border-radius: 50px;
+    background-color: #FF991B;
+    color: white !important;
+    font-size: 0.7rem !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+    width: 250px;
+    line-height: 1.5;
+    z-index: 1;
+    font-weight: 500;
+}
+
+/* A textura precisa ficar *abaixo* e com OPACIDADE baixa */
+.uk-button-primary::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50px;
+
+    background-image: linear-gradient(89deg, #D97600, #FF991B, #D97600, #FF991B);
+    background-size: 400% 200%;
+    animation: textura 2s ease infinite;
+
+    z-index: -1;
+}
+
+/* Força o texto para cima de tudo */
+.uk-button-primary > * {
+    position: relative;
+    z-index: 5;
+}
+
+.uk-button-primary:hover {
+    transform: scale(1.07);
+}

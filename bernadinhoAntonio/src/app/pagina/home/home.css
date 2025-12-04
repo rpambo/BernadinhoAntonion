@@ -1,0 +1,7 @@
+.title {
+    transition: transform 0.3s ease;
+}
+
+.title:hover {
+    transform: translateY(-4px);
+}

@@ -1,0 +1,25 @@
+.slider-fade-mask {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-fade-mask::before,
+.slider-fade-mask::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 120px; /* ajusta o tamanho da área do fade */
+    height: 100%;
+    z-index: 5;
+    pointer-events: none;
+}
+
+.slider-fade-mask::before {
+    left: 0;
+    background: linear-gradient(to right, #272727 0%, transparent 100%);
+}
+
+.slider-fade-mask::after {
+    right: 0;
+    background: linear-gradient(to left, #272727 0%, transparent 100%);
+}
