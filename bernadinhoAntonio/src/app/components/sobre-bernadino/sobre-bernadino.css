@@ -3,6 +3,12 @@
     100% { background-position-x: 100%; }
 }
 
+.uk-list > li {
+    margin-bottom: 2rem;
+}
+li{
+    color: #272727;
+}
 .uk-button-primary {
     position: relative;
     overflow: hidden;
