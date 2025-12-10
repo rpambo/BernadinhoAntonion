@@ -1,0 +1,8 @@
+@media (min-width: 344px) and (max-width: 768px) {
+    h1{
+        font-size: 1rem !important;
+    }
+    ul li a{
+        font-size: .98rem !important;
+    }
+}

@@ -1,7 +1,240 @@
+.logo-separada {
+    position: relative;
+    padding-right: 25px;
+}
+
+.logo-separada::after {
+    content: "";
+    position: absolute;
+    right: 0px; /* ajusta distância da linha */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 60%; /* altura da linha */
+    background-color: #ccc;
+}
+
+
+
+.uk-button:hover{
+    background-color: #ff9100 !important;
+}
+
+.conteudo{
+    padding-left: 7%; 
+    padding-top: 13%;
+}
+
+img {
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: translate(3px, 3px);
+}
+
+
 .title {
     transition: transform 0.3s ease;
 }
 
 .title:hover {
     transform: translateY(-4px);
+}
+
+.uk-button{
+    text-transform: lowercase;
+}
+
+.uk-button::first-letter{
+    text-transform: uppercase !important;
+}
+
+@media (min-width: 344px) and (max-width: 768px) {
+.logo-separada {
+    position: relative;
+    padding-right: 1px;
+}
+
+    .uk-section{
+    padding-bottom: 50px !important;
+} 
+.logo{
+    width: 70% !important;
+ }
+ .quote{
+    width: 10%;
+ }
+ .titl{
+    font-size: 1.5rem !important;
+    max-width: 230px !important;
+    margin-bottom: 25px !important;
+ }
+ .conteudo{
+    padding-top: 20%;
+ }
+ .nome{
+    font-size: .98rem !important;
+ }
+ .titulo{
+    font-size: .98rem !important;
+    max-width: 150px !important;
+ }
+ .brands{
+    width: 65% !important;
+ }
+}
+
+@media (width: 540px) {
+.uk-section{
+    padding-bottom: 50px !important;
+} 
+.logo{
+    width: 70% !important;
+ }
+ .quote{
+    width: 10%;
+ }
+ .titl{
+    font-size: 2rem !important;
+    max-width: 350px !important;
+    margin-bottom: 25px !important;
+    margin-top: 20px !important;
+ }
+ .conteudo{
+    padding-top: 35%;
+ }
+ .nome{
+    font-size: 1.2rem !important;
+ }
+ .titulo{
+    font-size: 1rem !important;
+    max-width: 150px !important;
+ }
+ .brands{
+    width: 65% !important;
+ }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .logo{
+        width: 40% !important;
+    }
+    .uk-button{
+        font-size: .7rem !important;
+    }
+    .titl{
+        font-size: 1.3rem !important;
+        max-width: 230px !important;
+        margin-bottom: 9px !important;
+        margin-top: 10px !important;
+    }
+    .conteudo{
+        padding-top: 7%;
+    }
+    .quote{
+        width: 5%;
+    }
+
+    .brands{
+        width: 65% !important;
+    }
+
+    .nome{
+        font-size: .98rem !important;
+        margin-top: 6px;
+    }
+}
+
+@media (min-width: 820px) and (max-width: 1180px) {
+    .logo{
+        width: 40% !important;
+    }
+    .uk-button{
+        font-size: .7rem !important;
+    }
+    .titl{
+        font-size: 1.3rem !important;
+        max-width: 230px !important;
+        margin-bottom: 9px !important;
+        margin-top: 10px !important;
+    }
+    .conteudo{
+        padding-top: 10%;
+    }
+    .quote{
+        width: 4%;
+    }
+
+    .brands{
+        width: 65% !important;
+    }
+
+    .nome{
+        font-size: .98rem !important;
+        margin-top: 6px;
+    }
+
+    .titulo{
+        font-size: .98rem !important;
+        max-width: 150px !important;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .logo{
+        width: 25% !important;
+    }
+    .uk-button{
+        font-size: .9rem !important;
+    }
+    .titl{
+        font-size: 2rem !important;
+        max-width: 350px !important;
+        margin-bottom: 9px !important;
+    }
+    .conteudo{
+        padding-top: 9%;
+    }
+    .quote{
+        width: 5%;
+    }
+
+    .brands{
+        width: 70% !important;
+    }
+
+    .nome{
+        font-size: .98rem !important;
+        margin-top: 6px;
+    }
+}
+
+@media (min-width: 912px) and (max-width: 1199px) {
+    .logo{
+        width: 25% !important;
+    }
+    .uk-button{
+        font-size: .9rem !important;
+    }
+    .titl{
+        font-size: 2rem !important;
+        max-width: 350px !important;
+        margin-bottom: 9px !important;
+    }
+    .conteudo{
+        padding-top: 7%;
+    }
+    .quote{
+        width: 4%;
+    }
+
+    .brands{
+        width: 70% !important;
+    }
+
+    .nome{
+        font-size: .98rem !important;
+        margin-top: 6px;
+    }
 }

@@ -1,7 +1,49 @@
-.card {
-    transition: transform 0.3s ease;
+.circle {
+    width: 50px;            /* largura do círculo */
+    height: 50px;           /* altura do círculo */
+    background-color: transparent; /* cor do círculo */
+    color: #a5a4a4;           /* cor do número */
+    border-radius: 50%;     /* transforma em círculo */
+    display: flex;          /* centraliza o conteúdo */
+    align-items: center;    /* centraliza verticalmente */
+    justify-content: center;/* centraliza horizontalmente */
+    font-weight: bold;
+    font-size: 1.2rem;
+    border: 2px solid #a5a4a4;
+    font-family: 'Exo 2';
+    margin-left: auto;
 }
 
-.card:hover {
-    transform: translateY(-4px);
+.circle-right {
+    width: 50px;            /* largura do círculo */
+    height: 50px;           /* altura do círculo */
+    background-color: transparent; /* cor do círculo */
+    color: #a5a4a4;           /* cor do número */
+    border-radius: 50%;     /* transforma em círculo */
+    display: flex;          /* centraliza o conteúdo */
+    align-items: center;    /* centraliza verticalmente */
+    justify-content: center;/* centraliza horizontalmente */
+    font-weight: bold;
+    font-size: 1.2rem;
+    border: 2px solid #a5a4a4;
+    font-family: 'Exo 2';
+    margin-right: auto;
+}
+
+.uk-button:hover{
+    background-color: #ff9100 !important;
+}
+
+.uk-button{
+    text-transform: lowercase;
+}
+
+.uk-button::first-letter{
+    text-transform: uppercase;
+}
+
+@media (min-width: 344px) and (max-width: 768px){
+    h3{
+        font-size: 1.5rem !important;
+    }
 }

@@ -3,9 +3,29 @@
     100% { background-position-x: 100%; }
 }
 
-.uk-list > li {
-    margin-bottom: 2rem;
+.uk-button{
+    text-transform: lowercase;
 }
+
+.uk-button::first-letter{
+    text-transform: uppercase;
+}
+
+.uk-button:hover{
+    background-color: #ff9100 !important;
+}
+
+.uk-list li img {
+    vertical-align: top; /*linha ao centro do texto */
+    margin-right: 10px;      /* espaçamento entre ícone e texto */
+}
+
+.uk-list li {
+    display: flex;
+    align-items: flex-start; /* topo do texto alinhado com o topo do ícone */
+    gap: 10px;               /* espaçamento entre ícone e texto */
+}
+
 li{
     color: #272727;
 }
@@ -28,26 +48,85 @@ li{
     font-weight: 500;
 }
 
-/* A textura precisa ficar *abaixo* e com OPACIDADE baixa */
-.uk-button-primary::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: 50px;
+.hero-box {
+    width: 100%;
+    border-radius: 10px;
 
-    background-image: linear-gradient(89deg, #D97600, #FF991B, #D97600, #FF991B);
-    background-size: 400% 200%;
-    animation: textura 2s ease infinite;
+    /* Altura mínima do banner, ajusta como quiser */
+    min-height: 867px;
 
-    z-index: -1;
+    background-image: url("/imagens/back-post-bernardino-desktop.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-/* Força o texto para cima de tudo */
-.uk-button-primary > * {
-    position: relative;
-    z-index: 5;
+.title {
+    font-size: 3.1rem !important;
 }
 
-.uk-button-primary:hover {
-    transform: scale(1.07);
+@media (min-width: 344px) and (max-width: 767px){
+    .uk-section{
+        padding-top: 50px !important;
+        margin-top: -5px !important;
+    }
+    .hero-box{
+        width: 100%;
+        border-radius: 10px;
+
+        /* Altura mínima do banner, ajusta como quiser */
+        min-height: 920px;
+
+        background-image: url("/imagens/back-post-bernardino-mobile.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .conteudo{
+        padding-top: 90% !important;
+    }
+    .title{
+        font-size: 2.5rem !important;
+    }
+    .sub-title{
+        font-size: 1.2rem !important;
+    }
+    ul li{
+        font-size: .98rem;
+    }
+    p{
+        font-size: .98rem !important;
+    }
+    .logo{
+        width: 70%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .uk-section{
+        margin-top: -5px !important;
+    }
+
+    .hero-box{
+        background-position: left;
+    }
+    .conteudo{
+        padding-top: 60% !important;
+    }
+    .title{
+        font-size: 2.5rem !important;
+    }
+    .sub-title{
+        font-size: 1.2rem !important;
+    }
+    ul li{
+        font-size: .98rem;
+    }
+    p{
+        font-size: .98rem !important;
+    }
+    .logo{
+        width: 70%;
+    }
 }

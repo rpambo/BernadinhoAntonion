@@ -3,6 +3,13 @@
     overflow: hidden;
 }
 
+.uk-section h1, .uk-section p {
+    margin: 0;  /* remove margem padrão */
+    padding: 0;
+}
+
+
+
 .slider-fade-mask::before,
 .slider-fade-mask::after {
     content: "";
@@ -16,10 +23,10 @@
 
 .slider-fade-mask::before {
     left: 0;
-    background: linear-gradient(to right, #272727 0%, transparent 100%);
+    background: linear-gradient(to right, #000 0%, transparent 100%);
 }
 
 .slider-fade-mask::after {
     right: 0;
-    background: linear-gradient(to left, #272727 0%, transparent 100%);
+    background: linear-gradient(to left, #000 0%, transparent 100%);
 }
