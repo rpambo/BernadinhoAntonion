@@ -1,132 +1,29 @@
-@keyframes textura {
-    0% { background-position-x: 0%; }
-    100% { background-position-x: 100%; }
+.back{
+    background: linear-gradient(to right, #fa8072, #f95846);
 }
 
-.uk-button{
-    text-transform: lowercase;
-}
-
-.uk-button::first-letter{
-    text-transform: uppercase;
-}
-
-.uk-button:hover{
-    background-color: #ff9100 !important;
-}
-
-.uk-list li img {
-    vertical-align: top; /*linha ao centro do texto */
-    margin-right: 10px;      /* espaçamento entre ícone e texto */
-}
-
-.uk-list li {
-    display: flex;
-    align-items: flex-start; /* topo do texto alinhado com o topo do ícone */
-    gap: 10px;               /* espaçamento entre ícone e texto */
-}
-
-li{
-    color: #272727;
-}
-.uk-button-primary {
-    position: relative;
-    overflow: hidden;
-    border: none;
-    outline: 2px solid #d976004d;
-    outline-offset: 8px;
-    border-radius: 50px;
-    background-color: #FF991B;
-    color: white !important;
-    font-size: 0.7rem !important;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    padding: 10px 20px;
-    width: 250px;
-    line-height: 1.5;
-    z-index: 1;
+.title{
+    color: white;
+    font-family: "Urbanist";
     font-weight: 500;
 }
 
-.hero-box {
-    width: 100%;
+.desc{
+    max-width: 400px; 
+    font-weight: 400; 
+    font-size: 1rem;
+    color: white;
+}
+
+.uk-button {
+    background-color: white;
     border-radius: 10px;
-
-    /* Altura mínima do banner, ajusta como quiser */
-    min-height: 867px;
-
-    background-image: url("/imagens/back-post-bernardino-desktop.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    color: #f95846;
+    padding: 5px 15px;
+    border: none;
 }
 
-.title {
-    font-size: 3.1rem !important;
-}
-
-@media (min-width: 344px) and (max-width: 767px){
-    .uk-section{
-        padding-top: 50px !important;
-        margin-top: -5px !important;
-    }
-    .hero-box{
-        width: 100%;
-        border-radius: 10px;
-
-        /* Altura mínima do banner, ajusta como quiser */
-        min-height: 920px;
-
-        background-image: url("/imagens/back-post-bernardino-mobile.png");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    .conteudo{
-        padding-top: 90% !important;
-    }
-    .title{
-        font-size: 2.5rem !important;
-    }
-    .sub-title{
-        font-size: 1.2rem !important;
-    }
-    ul li{
-        font-size: .98rem;
-    }
-    p{
-        font-size: .98rem !important;
-    }
-    .logo{
-        width: 70%;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    .uk-section{
-        margin-top: -5px !important;
-    }
-
-    .hero-box{
-        background-position: left;
-    }
-    .conteudo{
-        padding-top: 60% !important;
-    }
-    .title{
-        font-size: 2.5rem !important;
-    }
-    .sub-title{
-        font-size: 1.2rem !important;
-    }
-    ul li{
-        font-size: .98rem;
-    }
-    p{
-        font-size: .98rem !important;
-    }
-    .logo{
-        width: 70%;
-    }
+.uk-button:hover{
+    background-color: #008080;
+    color: white;
 }

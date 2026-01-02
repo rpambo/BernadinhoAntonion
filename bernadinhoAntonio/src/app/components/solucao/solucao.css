@@ -1,0 +1,23 @@
+p{
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 1rem;
+    color: #272727;
+    margin-bottom: 45px;
+}
+
+.card-title{
+    font-family: "Urbanist";
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1;
+    text-align: left;
+    margin-left: 5px;
+}
+
+ .uk-car{
+    animation: ease-in-out 2s normal;
+ }
+.uk-car:hover{
+    transform: translateX(5px) translateZ(3px) translateY(1px);
+}

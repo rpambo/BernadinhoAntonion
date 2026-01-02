@@ -1,0 +1,14 @@
+h2{
+    font-family: "Urbanist";
+}
+p{
+    font-family: "Roboto";
+    font-weight: 300;
+    color: #545454;
+}
+.uk-button-default{
+    background-color: #fa8072;
+    color: white;
+    font-family: "Urbanist";
+    font-weight: 500;
+}

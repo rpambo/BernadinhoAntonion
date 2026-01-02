@@ -1,8 +1,53 @@
-@media (min-width: 344px) and (max-width: 768px) {
-    h1{
-        font-size: 1rem !important;
-    }
-    ul li a{
-        font-size: .98rem !important;
-    }
+ul li a{
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 5px;
+    font-family: "Urbanist";
+    color: #272727;
+}
+
+ul li {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 5px;
+    font-family: "Urbanist";
+    color: #272727;
+}
+h1{
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: "Urbanist";
+    margin: 0;
+}
+hr{
+    border: .1px solid #f95846 !important;
+}
+
+li a:hover{
+    color: #fa7280 !important;
+}
+li a:hover .uk-icon{
+    color: #fff !important;
+    background-color: #008080 !important;
+}
+a{
+    text-decoration: none;
+}
+
+.uk-icon:hover{
+    color: #008080 !important;
+}
+
+.texto-com-reticencias {
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* Limita a 2 linhas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+  /* Adicione estas propriedades */
+  word-break: break-word; /* Quebra palavras longas */
+  max-width: 100%; /* Garante que respeite o container pai */
+  font-size: 16px;
+  font-weight: 600;
 }

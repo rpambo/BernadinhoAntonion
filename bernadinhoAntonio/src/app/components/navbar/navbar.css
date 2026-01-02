@@ -1,0 +1,22 @@
+ul li a{
+    color: white;
+    font-size: .8rem;
+    font-weight: 500;
+    font-family: "Urbanist";
+}
+
+ul li a:hover{
+    color: #fa7280;
+}
+
+.uk-icon:hover{
+    color: #fa7280 !important;
+}
+
+.dropdown-link{
+    color: #272727 !important;
+    font-size: 1rem !important;
+}
+.dropdown-link:hover{
+    color: #fa7280 !important;
+}

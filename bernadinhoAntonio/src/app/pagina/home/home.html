@@ -1,54 +1,20 @@
-<div class="uk-section uk-padding-remove-bottom" style="background-color: #000; margin-bottom: none;">
-  
-    <div class="uk-container uk-position-relative">
-    <img src="imagens/BernadinoAntonio.png" class="uk-margin-medium-left logo uk-margin-medium-bottom" width="25%" alt="logo">
-    <!-- Imagem de fundo desktop -->
-    <img src="imagens/carrosel-desktop.png" alt="Capa" class="uk-width-1-1 uk-visible@s">
-    <img src="imagens/carrosel-mobile.png" alt="Capa" class="uk-width-1-1 uk-hidden@s">
-
-    <!-- Conteúdo principal -->
-    <div class="uk-position-cover">
-        <div class="conteudo">
-            <div>
-            <img src="imagens/quote.svg" class="quote" alt="">
-        <h1 class="uk-margin-small-bottom uk-margin-remove-top titl" style="max-width: 450px;color: #fff; font-size: 2.5rem; line-height: 1.3; font-family: 'Exo 2';">
-            Quando você aprende com quem sabe, você erra menos.
-        </h1>
-
-        <h3 class="uk-margin-remove nome" style="color: #fff; font-weight: 600; font-family: 'Exo 2';">
-            Bernardino António
-        </h3>
-
-        <p class="uk-margin-small-top titulo" style="font-weight: 300; color: #ccc; font-size: 0.95rem; font-family: 'Exo 2';">
-            Fundador da Gest Dreams
-        </p>
-
-        <div class="uk-child-width-1-2@s uk-child-width-1-2@l uk-child-width-1-2@m uk-grid" >
-           <div>
-             <div class="uk-flex uk-flex-middle">
-                <a href="" class="logo-separada"><img src="imagens/logo/gestdreams-brand.svg" class="brands" width="100%" alt="Gest Dreams" style="max-width: 480px;"></a>
-                <a href=""><img src="imagens/logo/ondabranca-brand.svg" class="brands" width="100%" alt="Onda Branca" style="max-width: 480px;"></a>
-            </div>
-           </div>
-            <div >
-                <div class="uk-visible@s uk-text-center">
-                    <a href="#secao-transformacao" uk-scroll class="uk-button uk-button-default" style="background-color: #d17a0a; border: none; color: white; padding: 10px 20px; border-radius: 5px; font-family: 'Exo 2'; font-size: 1rem;">Saiba como transformar sua empresa</a>
-                </div>
-            </div>
+<app-navbar></app-navbar>
+<div uk-slideshow="autoplay: true; animation: slide; pause-on-hover: false; autoplay-interval: 10000; ratio: false">
+  <div class="uk-slideshow-items" uk-height-viewport="offset-top: true">
+    <div class="uk-background-cover uk-flex uk-flex-middle uk-flex-between uk-flex-center" style="background-position: left;" uk-img data-src="imagens/bghero-2.png">
+      <div class="uk-position-cover uk-overlay">
+        <div class="uk-position-bottom-left" style="bottom: 35%; left: 3%; max-width: 550px; color: white;">
+          <h1  class="titulo" style="color: white; font-weight: bold;">Excelência Corporativa, Transformação Humana</h1>
+          <a href="" class="uk-button uk-button-default">Entre em contacto</a>
         </div>
-        </div>
-        </div>
+      </div>
     </div>
-
-    <div class="uk-text-center uk-hidden@s uk-width-1-1 uk-margin-small-top">
-        <a href="#secao-transformacao" uk-scroll class="uk-button uk-button-default" style="background-color: #d17a0a; border: none; color: white; padding: 10px 20px; border-radius: 5px; font-family: 'Exo 2'; font-size: 1rem;">Saiba como transformar sua empresa</a>
-        <h1 class="uk-margin-small-top uk-margin-remove-bottom" style="color: white; font-family: 'Exo 2'; font-size: 1.2rem; line-height: 1.5;">Descubra como o Dr. Bernardino transforma stress em prevenção e equipes em alta performance.</h1>
-    </div>
-
   </div>
 </div>
-
-<app-slide-logo></app-slide-logo>
+<app-p7></app-p7>
+<app-estatistica></app-estatistica>
+<app-p7-existe></app-p7-existe>
+<app-solucao></app-solucao>
 <app-sobre-bernadino></app-sobre-bernadino>
-<app-back></app-back>
+<app-contacto></app-contacto>
 <app-footer></app-footer>
