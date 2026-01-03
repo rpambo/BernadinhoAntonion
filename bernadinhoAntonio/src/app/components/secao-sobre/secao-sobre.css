@@ -1,0 +1,11 @@
+.back{
+    background-image: url(/imagens/sobre-1.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    height: 100vh;
+}
+
+.uk-overlay-primary{
+    background-color: #00000024;
+}

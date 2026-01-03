@@ -1,8 +1,8 @@
 ul li a{
     color: white;
-    font-size: .8rem;
+    font-size: .88rem;
     font-weight: 500;
-    font-family: "Urbanist";
+    font-family: "Roboto";
 }
 
 ul li a:hover{
@@ -19,4 +19,9 @@ ul li a:hover{
 }
 .dropdown-link:hover{
     color: #fa7280 !important;
+}
+
+.uk-navbar-nav > li.uk-active > a {
+  color: #fa7280 !important; /* cor para ativo */
+  font-weight: 600;
 }

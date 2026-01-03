@@ -13,12 +13,14 @@ ul li {
     font-family: "Urbanist";
     color: #272727;
 }
+
 h1{
     font-size: 1rem;
     font-weight: bold;
     font-family: "Urbanist";
     margin: 0;
 }
+
 hr{
     border: .1px solid #f95846 !important;
 }
@@ -26,12 +28,10 @@ hr{
 li a:hover{
     color: #fa7280 !important;
 }
+
 li a:hover .uk-icon{
     color: #fff !important;
     background-color: #008080 !important;
-}
-a{
-    text-decoration: none;
 }
 
 .uk-icon:hover{
@@ -50,4 +50,37 @@ a{
   max-width: 100%; /* Garante que respeite o container pai */
   font-size: 16px;
   font-weight: 600;
+}
+
+.uk-card{
+    box-shadow: 5px 5px 5px 5px #27272715;
+    padding: 15px 25px;
+}
+
+.text-desc-card{
+    font-family: "Urbanist";
+    font-size: 1.3rem;
+    color: #272727;
+}
+
+a{
+    text-decoration: none;
+}
+
+.line{
+    display: block;
+    width: 50px;
+    height: 5px;
+    background-color: #fa7280;    
+}
+
+.text-card:hover .line{
+    background-color: #008080;
+}
+.text-card:hover .uk-icon{
+    color: #008080 !important;
+    transform: translateX(5px) translateY(2px) translateZ(3px);
+}
+.uk-card-default:hover{
+    transform: translateX(5px) translateY(2px) translateZ(3px);
 }

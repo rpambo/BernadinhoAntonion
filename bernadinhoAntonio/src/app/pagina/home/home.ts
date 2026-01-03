@@ -7,11 +7,12 @@ import { SobreBernadino } from "../../components/sobre-bernadino/sobre-bernadino
 import { Contacto } from "../../components/contacto/contacto";
 import { Footer } from "../../components/footer/footer";
 import { Estatistica } from "../../components/estatistica/estatistica";
+import { RouterLink } from "@angular/router";
 
 
 @Component({
   selector: 'app-home',
-  imports: [Navbar, P7, P7Existe, Solucao, SobreBernadino, Contacto, Footer, Estatistica],
+  imports: [Navbar, P7, P7Existe, Solucao, SobreBernadino, Contacto, Footer, Estatistica, RouterLink],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
