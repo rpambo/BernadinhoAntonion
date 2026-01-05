@@ -25,3 +25,8 @@ ul li a:hover{
   color: #fa7280 !important; /* cor para ativo */
   font-weight: 600;
 }
+
+.dropdown-link{
+    font-family: 'Urbanist';
+    font-weight: 400 !important;
+}

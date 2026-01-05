@@ -16,14 +16,16 @@
 }
 
 .uk-button {
-    background-color: white;
+    background-color: transparent;
     border-radius: 10px;
-    color: #f95846;
+    border: 2px solid #fff !important;
+    color: #fff;
     border: none;
 }
 
 .uk-button:hover{
     background-color: #008080;
+    border: 2px solid #008080 !important;
     color: white;
 }
 

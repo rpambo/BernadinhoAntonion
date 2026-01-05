@@ -3,3 +3,37 @@
     font-family: "Urbanist";
     font-weight: 500;
 }
+
+li a{
+    display: inline-block;
+    text-transform: lowercase;
+}
+li a{
+    text-transform: lowercase;
+}
+li a::first-letter{
+    text-transform: uppercase ;
+}
+li a{
+    background-color: transparent;
+    box-shadow: 5px 5px 5px 5px #27272715;
+    color: #fa7280;
+}
+
+.uk-subnav-pill > .uk-active > a{
+    border-bottom: 3px solid #fa7280;
+}
+
+.uk-button{
+    background-color: #fa7280;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    font-family: 'Urbanist';
+    font-weight: 500;
+}
+
+.uk-button:hover{
+    background-color: #008080;
+    color: white;
+}

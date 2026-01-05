@@ -77,10 +77,14 @@ a{
 .text-card:hover .line{
     background-color: #008080;
 }
+.uk-card-default, .text-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
 .text-card:hover .uk-icon{
     color: #008080 !important;
-    transform: translateX(5px) translateY(2px) translateZ(3px);
+     transform: scale(1.05) !important;
 }
 .uk-card-default:hover{
-    transform: translateX(5px) translateY(2px) translateZ(3px);
+     transform: scale(1.05) !important;
 }

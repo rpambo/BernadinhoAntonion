@@ -1,0 +1,34 @@
+input, textarea{
+    box-shadow: 1px 1px 1px 1px #e7e7e707;
+    border: 1px solid #c1c1c1;
+    border-radius: 10px; 
+    background-color: #f5f5dc;
+}
+
+input::placeholder, textarea::placeholder {
+    font-weight: 400;
+}
+
+.uk-subnav-pill > .uk-active > a{
+    border-bottom: 3px solid #fa7280;
+    color: #272727;
+}
+
+li a{
+    display: inline-block;
+    text-transform: lowercase;
+}
+
+li a{
+    text-transform: lowercase;
+}
+
+li a::first-letter{
+    text-transform: uppercase ;
+}
+
+li a{
+    background-color: transparent;
+    box-shadow: 5px 5px 5px 5px #27272715;
+    color: #fa7280;
+}
