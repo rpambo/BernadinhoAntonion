@@ -1,0 +1,43 @@
+.background{
+    height: 500px;
+    width: 450px;
+    display: flex;
+}
+
+.background img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.uk-card-title{
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Urbanist";
+    color: #fa8072;
+    margin: 0;
+}
+
+.uk-card-esta{
+    border-right: 1px #c4c4c4 solid;
+    padding: 5px 10px;
+}
+
+.uk-button-default{
+    background-color: #fa8072;
+    color: white;
+    border-radius: 10px;
+
+    font-size: 1rem;
+    font-family: "Urbanist";
+    font-weight: 400;
+}
+p{
+    font-family: "Roboto";
+    font-weight: 300;
+    color: #545454;
+}
+
+.uk-button-default:hover{
+    background-color: #008080;
+    color: white;
+}

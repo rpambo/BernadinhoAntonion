@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { P7 } from './p7';
+import { MentoriaSection } from './mentoria-section';
 
-describe('P7', () => {
-  let component: P7;
-  let fixture: ComponentFixture<P7>;
+describe('MentoriaSection', () => {
+  let component: MentoriaSection;
+  let fixture: ComponentFixture<MentoriaSection>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [P7]
+      imports: [MentoriaSection]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(P7);
+    fixture = TestBed.createComponent(MentoriaSection);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
