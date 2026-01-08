@@ -2,3 +2,8 @@ hr{
     border: 1.5px solid #c4c4c4;
     border-radius: 10px;
 }
+
+.uk-button-default:hover{
+    background-color: #008080 !important;
+    color: white;
+}

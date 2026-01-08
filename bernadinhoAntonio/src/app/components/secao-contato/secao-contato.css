@@ -14,6 +14,17 @@ input::placeholder, textarea::placeholder {
     color: #272727;
 }
 
+hr{
+    border-bottom: 2px solid #27272738;
+    max-width: 86%;
+    margin: auto;
+    margin-left: 30px;
+}
+
+ul{
+    margin-bottom: 1px;
+}
+
 li a{
     display: inline-block;
     text-transform: lowercase;
@@ -29,6 +40,6 @@ li a::first-letter{
 
 li a{
     background-color: transparent;
-    box-shadow: 5px 5px 5px 5px #27272715;
+    box-shadow: -5px -5px 5px 5px #27272715;
     color: #fa7280;
 }

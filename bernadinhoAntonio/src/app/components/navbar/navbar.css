@@ -26,7 +26,19 @@ ul li a:hover{
   font-weight: 600;
 }
 
+.uk-navbar-nav  li.uk-active ,   li.uk-active > .dropdown-link {
+  color: #fa7280 !important; /* cor para ativo */
+  font-weight: 600;
+}
+
+
 .dropdown-link{
     font-family: 'Urbanist';
     font-weight: 400 !important;
 }
+
+
+.uk-navbar-dropdown {
+  z-index: 2000;
+}
+

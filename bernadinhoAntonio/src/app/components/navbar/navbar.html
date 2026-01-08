@@ -1,4 +1,4 @@
-<div class="uk-navbar-container uk-navbar-transparent uk-position-absolute uk-position-top" style="z-index: 1;">
+<div class="uk-navbar-container uk-navbar-transparent uk-position-absolute uk-position-top" style="z-index: 11;">
     <div class="uk-container">
         <div  class="uk-child-width-1-2@l uk-grid" style="padding: 20px 0px;">
             <div>
@@ -33,7 +33,7 @@
                     <li routerLinkActive="uk-active" [routerLinkActiveOptions]="{ exact: false }">
                         <a [routerLink]="['/sobre-bernardino']">Bernardino António </a>
                     </li>
-                    <li routerLinkActive="uk-active" [routerLinkActiveOptions]="{ exact: false }">
+                    <li  routerLinkActive="uk-active" [routerLinkActiveOptions]="{ exact: false }">
                         <a href="javascript:void(0)">Programas de transformação</a>
                         <div class="uk-navbar-dropdown back uk-padding-large custom-dropdown uk-navbar-dropdown-width-1-1"
                             uk-dropdown="mode: click, hover; delay-show: 200; delay-hide: 200; stretch: x"
@@ -51,10 +51,10 @@
                                 <div class="uk-grid uk-child-width-1-2@s" uk-grid>
                                     <div>
                                         <ul class="uk-nav uk-navbar-dropdown-nav" style="max-width: 250px;">
-                                            <li ><a  class="dropdown-link" [routerLink]="['/p7']">Programa de saude mental do trabalhador</a></li>
-                                            <li ><a class="dropdown-link" [routerLink]="['/mentoria-para-gestores']">Mentoria de saúde mental para gestores</a></li>
-                                            <li ><a class="dropdown-link" [routerLink]="['/gestao-de-saude-mental-para-empressa']">Gestão de programa de saúde mental para empresas</a></li>
-                                            <li ><a class="dropdown-link" [routerLink]="['/programa-de-renda-extra']">Programa de Renda Extra</a></li>
+                                            <li routerLinkActive="uk-active" [routerLinkActiveOptions]="{ exact: false }" ><a  class="dropdown-link" [routerLink]="['/p7']">Programa de saude mental do trabalhador</a></li>
+                                            <li routerLinkActive="uk-active" [routerLinkActiveOptions]="{ exact: false }" ><a class="dropdown-link" [routerLink]="['/mentoria-para-gestores']">Mentoria de saúde mental para gestores</a></li>
+                                            <li routerLinkActive="uk-active" [routerLinkActiveOptions]="{ exact: false }" ><a class="dropdown-link" [routerLink]="['/gestao-de-programa-de-saude-mental-para-empresa']">Gestão de programa de saúde mental para empresas</a></li>
+                                            <li routerLinkActive="uk-active" [routerLinkActiveOptions]="{ exact: false }" ><a class="dropdown-link" [routerLink]="['/programa-de-renda-extra']">Programa de Renda Extra</a></li>
                                         </ul>
                                     </div>
                                 </div>

@@ -53,7 +53,7 @@ li a:hover .uk-icon{
 }
 
 .uk-card{
-    box-shadow: 5px 5px 5px 5px #27272715;
+    box-shadow: -10px 5px 10px 10px #27272715;
     padding: 15px 25px;
 }
 

@@ -22,6 +22,7 @@ li a{
 
 .uk-subnav-pill > .uk-active > a{
     border-bottom: 3px solid #fa7280;
+    color: #272727;
 }
 
 .uk-button{
