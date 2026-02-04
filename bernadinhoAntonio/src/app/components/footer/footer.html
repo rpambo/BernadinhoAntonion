@@ -1,91 +1,68 @@
-<div class="uk-section uk-padding-remove" style="background-color: #f5f5dc;">
+<div class="uk-section efeito-cantos" style="background-color: #000; position: relative; z-index: 1; padding-bottom: 20px;">
     <div class="uk-container">
-        <div class="uk-child-width-1-3@l uk-grid uk-margin-medium-bottom" >
-            <div>
-                <a class="text-card" href="">
-                    <div class="uk-position-relative uk-card uk-card-default uk-card-body" style="background-color: #f5f5dc; border-radius: 5px;">
-                    <p class="text-desc-card">Acesse o canal no YouTube e acessa o melhor conteúdos <span class="line"></span></p>
-                    <span uk-icon="icon: youtube; ratio: 2.5" style="color: #fa8072;" class="uk-position-bottom-right uk-margin-small-bottom uk-margin-small-right"></span>
-                </div>
-                </a>
-            </div>
-            <div>
-                <a class="text-card" href="">
-                    <div class="uk-position-relative uk-card uk-card-default uk-card-body" style="background-color: #f5f5dc; border-radius: 5px;">
-                    <p class="text-desc-card">Acesse o Instagram e esteja sempre conectado<span class="line"></span></p>
-                    <span uk-icon="icon: instagram; ratio:2.5" style="color: #fa8072;" class="uk-position-bottom-right uk-margin-small-bottom uk-margin-small-right"></span>
-                </div>
-                </a>
-            </div>
-            <div>
-                <a class="text-card" href="">
-                    <div class="uk-position-relative uk-card uk-card-default uk-card-body" style="background-color: #f5f5dc; border-radius: 5px;">
-                    <p class="text-desc-card">Acesse o LinkedIn e acompanhe conteúdos profissionais <span class="line"></span> </p>
-                    <span uk-icon="icon: linkedin; ratio:2.5" style="color: #fa8072;" class="uk-position-bottom-right uk-margin-small-bottom uk-margin-small-right"></span>
-                </div>
-                </a>
-            </div>
+        <div class="circulo"></div>
+    <div class="uk-child-width-1-4@l uk-child-width-1-4@s uk-child-width-1-4@m uk-grid">
+
+      <!-- Logo + lema -->
+      <div>
+        <img src="imagens/logo-bernadardino.svg" width="180" alt="Onda Branca">
+      </div>
+
+      <div>
+        <h3>Saiba mais</h3>
+        <ul class="uk-list">
+          <li><a href="">Bernardino Antonio</a></li>
+          <li><a href="">GestDreams</a></li>
+          <li><a href="">Onda branca</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Contacto</h3>
+        <ul class="uk-list">
+          <li><a href="">Suporte</a></li>
+        </ul>
+      </div>
+
+      <!-- Redes sociais e contactos -->
+      <div>
+        <h3>Redes sociais</h3>
+
+        <div class="uk-flex  uk-flex-middle uk-grid-small" uk-grid>
+          <a href="" class="uk-flex-middle" uk-tooltip="Instagram" style="font-size: 1.5rem;">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="" uk-tooltip="Facebook" style="font-size: 1.5rem;">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="" uk-tooltip="LinkedIn" style="font-size: 1.5rem;">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="" class="" uk-tooltip="YouTube" style="font-size: 1.5rem;">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="" uk-tooltip="Spotify" style="font-size: 1.5rem;" >
+            <i class="fab fa-spotify"></i>
+          </a>
         </div>
+      </div>
+
     </div>
+
     <hr>
-    <div class="uk-container" style="padding: 0 20px;">
-        <div class="uk-child-width-1-4@l uk-grid">
-            <div>
-                <ul class="uk-list uk-margin-remove-bottom" >
-                    <li style="font-size: 1rem; font-weight: bold;">Nossos canais de comunicação</li>
-                    <li> <a href=""><span class="uk-icon-button" style="margin-right: 5px; color: #fff; background-color: #f95846; width: 20px; height: 20px; margin-left: -5px;" uk-icon="icon: play"></span>Onda branca cast</a></li>
-                    <li><span style="margin-right: 5px; color: #f95846; font-weight: bold;" uk-icon="icon: mail; ratio: 1"></span>contato@bernardinoantonio.com</li>
-                </ul>
-                <div class="uk-flex uk-margin-bottom">
-                    <a href=""><span class="uk-margin-small-right" uk-icon="icon: facebook; ratio:1" style="color: #f95846;"></span></a>
-                    <a href=""><span class="uk-margin-small-right" uk-icon="icon: instagram; ratio:1" style="color: #f95846;"></span></a>
-                    <a href=""><span class="uk-margin-small-right" uk-icon="icon: linkedin; ratio:1" style="color: #f95846;"></span></a>
-                    <a href=""><span class="uk-margin-small-right" uk-icon="icon: youtube; ratio:1" style="color: #f95846;"></span></a>
-                    <a href=""><span class="uk-margin-small-right" uk-icon="icon: cast; ratio:1" style="color: #f95846;"></span></a>
-                    <a href=""><span class="fas fa-podcast" style="color: #f95846;"></span></a>
-                </div>
-            </div>
-            <div>
-                <ul class="uk-list">
-                    <li><a href="#">Home</a></li>
-                    <li><a [routerLink]="['/sobre-bernardino']">Bernardino Antonio</a></li>
-                    <li><a href="">Podcast</a></li>
-                    <li><a [routerLink]="['/contato']">Contacto</a></li>
-                </ul>
-            </div>
-            <div>
-                <ul class="uk-list">
-                    <li class="texto-com-reticencias"><a  href="">Programa de Saude emocional do trabalhador</a></li>
-                    <li class="texto-com-reticencias"><a href="">Programa de Gestao de saude emocional para empresa</a></li>
-                    <li class="texto-com-reticencias"><a href="">Programa de Renda extra</a></li>
-                    <li class="texto-com-reticencias"><a href="">Mentoria de Saude emocional para Gestores</a></li>
-                </ul>
-            </div>
-            <div>
-                <ul class="uk-list">
-                    <li><a href="">Blog do Bernadino antonio</a></li>
-                </ul>
-            </div>
-        </div>
+
+    <div class="uk-flex uk-flex-between uk-flex-middle uk-flex-wrap">
+      <div>
+        <p>
+          Copyright &copy; 
+          Todos os direitos reservados para Onda Branca.
+        </p>
+      </div>
+      <div>
+        <a href="">Política de privacidade</a> |
+        <a href="">Termos de uso</a>
+      </div>
     </div>
+  </div>
     
-</div>
-<div class="uk-section uk-padding-remove" style="background-color: #2e2e2d;">
-    <div class="uk-container">
-        <div class="" >
-        <div class="uk-child-width-1-3@l uk-grid">
-            <div>
-                <img width="180" src="imagens/logo.png" alt="">
-            </div>
-            <div class="uk-text-center uk-margin-small-top" style="font-family: 'Urbanist'; font-weight: 400; font-size: .8rem; color: white;">
-                <p>Copyright &copy;{{tempo}} • Todos os direitos reservados.</p>
-            </div>
-            <div>
-                <div class="uk-margin-small-top uk-text-right" style="font-family: 'Urbanist'; font-weight: 400; font-size: .8rem; color: white;">
-                    <a href="" style="color: white;">Politica de privacidade</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
 </div>

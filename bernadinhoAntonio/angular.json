@@ -22,7 +22,13 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "public/css/uikit.min.css",
+              "public/css/uikit.css"
+            ],
+            "scripts": [
+              "public/js/uikit.min.js",
+              "public/js/uikit.js"
             ]
           },
           "configurations": {
@@ -31,7 +37,7 @@
                 {
                   "type": "initial",
                   "maximumWarning": "500kB",
-                  "maximumError": "1MB"
+                  "maximumError": "2MB"
                 },
                 {
                   "type": "anyComponentStyle",

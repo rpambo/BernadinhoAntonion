@@ -1,96 +1,133 @@
-<div class="uk-navbar-container uk-navbar-transparent uk-position-absolute uk-position-top" style="z-index: 11;">
-    <div class="uk-container">
-        <div  class="uk-child-width-1-2@l uk-grid" style="padding: 20px 0px;">
-            <div>
-                <div>
-                    <a href=""><img width="200" src="imagens/logo.png" alt=""></a>
-                </div>
-            </div>
-            <div >
-                <div class="uk-flex uk-flex-middle uk-flex-right uk-margin-small-top">
-                    <div>
-                        <a href=""><span uk-icon="icon: facebook; ratio:1.2" style="color: #c5c5c5; margin-right: 10px;"></span></a>
-                    </div>
-                    <div>
-                        <a href=""><span uk-icon="icon: instagram; ratio:1.2" style="color: #c5c5c5; margin-right: 10px;"></span></a>
-                    </div>
-                    <div>
-                        <a href=""><span uk-icon="icon: linkedin; ratio:1.2" style="color: #c5c5c5; margin-right: 10px;"></span></a>
-                    </div>
-                    <div>
-                        <a href=""><span class="fas fa-podcast" style="color: #c5c5c5; margin-right: 10px;"></span></a>
-                    </div>
-                    <div>
-                        <a href=""><span uk-icon="icon: youtube; ratio:1.2" style="color: #c5c5c5; margin-right: 10px;"></span></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr style="margin: 0; border: 1px solid #c4c4c420;">
-        <div uk-navbar>
-            <div class="uk-navbar-left">
-                <ul class="uk-navbar-nav">
-                    <li routerLinkActive="uk-active" [routerLinkActiveOptions]="{ exact: false }">
-                        <a [routerLink]="['/sobre-bernardino']">Bernardino António </a>
-                    </li>
-                    <li  routerLinkActive="uk-active" [routerLinkActiveOptions]="{ exact: false }">
-                        <a href="javascript:void(0)">Programas de transformação</a>
-                        <div class="uk-navbar-dropdown back uk-padding-large custom-dropdown uk-navbar-dropdown-width-1-1"
-                            uk-dropdown="mode: click, hover; delay-show: 200; delay-hide: 200; stretch: x"
-                            hidden style="background-color: #f5f5dc;">
+<div class="uk-navbar-container" style="background-color: #8f51c9;">
+  <div class="uk-container">
+    <nav uk-navbar>
 
-                            <div  class="uk-drop-grid uk-child-width-1-2 uk-grid uk-drop-grid-divider uk-padding-medium uk-text-left">
-                                <div>
-                                    <h1 style="color: #fa7280; font-size: 2rem; font-weight: 500; font-family: 'Urbanist';">
-                                        Os melhores programas para transformar seus Resultados. 
-                                    </h1>
-                                    <p style="color: #272727; font-size: 1.2rem; font-family: 'Urbanist'; font-weight: 500;">
-                                         Desenvolvido pelo melhor especialista do país em saúde mental e relações organizacionais.
-                                    </p>
-                                </div>
-                                <div class="uk-grid uk-child-width-1-2@s" uk-grid>
-                                    <div>
-                                        <ul class="uk-nav uk-navbar-dropdown-nav" style="max-width: 250px;">
-                                            <li routerLinkActive="uk-active" [routerLinkActiveOptions]="{ exact: false }" ><a  class="dropdown-link" [routerLink]="['/p7']">Programa de saude mental do trabalhador</a></li>
-                                            <li routerLinkActive="uk-active" [routerLinkActiveOptions]="{ exact: false }" ><a class="dropdown-link" [routerLink]="['/mentoria-para-gestores']">Mentoria de saúde mental para gestores</a></li>
-                                            <li routerLinkActive="uk-active" [routerLinkActiveOptions]="{ exact: false }" ><a class="dropdown-link" [routerLink]="['/gestao-de-programa-de-saude-mental-para-empresa']">Gestão de programa de saúde mental para empresas</a></li>
-                                            <li routerLinkActive="uk-active" [routerLinkActiveOptions]="{ exact: false }" ><a class="dropdown-link" [routerLink]="['/programa-de-extra']">Programa de Renda Extra</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">Conteúdos Gratuitos</a>
-                        <div class="uk-navbar-dropdown back uk-padding-large custom-dropdown uk-navbar-dropdown-width-1-1"
-                            uk-dropdown="mode: click, hover; delay-show: 200; delay-hide: 200; stretch: x"
-                            hidden style="background-color: #f5f5dc;">
-                            <div class="uk-drop-grid uk-child-width-1-2 uk-grid uk-drop-grid-divider uk-padding-medium uk-text-left">
-                                <div>
-                                    <h1 style="color: #fa7280; font-size: 2rem; font-weight: 500; font-family: 'Urbanist';">
-                                        Conteúdos com orientações práticas para cuidar da sua saúde mental e viver com mais equilíbrio 
-                                    </h1>
-                                    <p style="color: #272727; font-size: 1.2rem; font-family: 'Urbanist'; font-weight: 500;">
-                                        Explore podcats e artigos com orientações práticas para saúde mental e equilíbrio
-                                    </p>
-                                </div>
-                                <div class="uk-grid uk-child-width-1-2@s" uk-grid>
-                                    <div>
-                                        <ul class="uk-nav uk-navbar-dropdown-nav" style="max-width: 250px;">
-                                            <li ><a class="dropdown-link" [routerLink]="['/mentoria-de-saude-mental-para-gestores']">Podcast</a></li>
-                                            <li ><a class="dropdown-link" [routerLink]="['/antendimento-empressarial']">Artigos</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li routerLinkActive="uk-active">
-                        <a [routerLink]="['/contato']">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+      <!-- LEFT: LOGO + MENU -->
+      <div class="uk-navbar-left">
+        <a href="">
+            <img src="imagens/logo-bernadardino.svg" width="160px"  alt="">
+        </a>
+        <!-- LOGO -->
+        
+
+        <!-- MENU -->
+        
+      </div>
+
+      <!-- RIGHT: CTA -->
+      <div class="uk-navbar-right uk-visible@s">
+        <ul class="uk-navbar-nav uk-visible@s">
+
+          <li>
+            <a href="javascript:void(0)">Home</a>
+          </li>
+
+          <li>
+            <a href="javascript:void(0)">Palestras</a>
+          </li>
+          
+          <li>
+            <a href="javascript:void(0)">Movimento onda branca</a>
+          </li>
+
+          <li>
+            <a href="javascript:void(0)">Blog</a>
+          </li>
+
+        </ul>
+        <a
+          [routerLink]="['/contato']"
+          class="uk-button btn-blue-alive"
+          style="background-color:#00479f;color:white;border-radius:5px;">
+          Contato
+        </a>
+      </div>
+
+      <!-- MOBILE -->
+      <div class="uk-navbar-right uk-hidden@s">
+        <a class="uk-navbar-toggle" uk-toggle="target: #offcanvas-nav">
+          <span uk-icon="icon: menu" style="color:white"></span>
+        </a>
+      </div>
+
+    </nav>
+  </div>
+</div>
+
+
+
+
+<!-- Offcanvas para mobile -->
+<div id="offcanvas-nav" uk-offcanvas="mode: reveal; overlay: true">
+  <div class="uk-offcanvas-bar back-canva" style="background-color: white;">
+
+    <!-- Botão de fechar -->
+    <button class="uk-offcanvas-close" style="color: #00479f;" type="button" uk-close></button>
+
+    <!-- Menu principal -->
+    <ul class="uk-nav uk-nav-default" uk-nav>
+      <!-- Sobre a Onda Branca -->
+      <li><a style="color:#272727;" [routerLink]="['']">Home</a></li>
+      <li><a style="color:#272727;" [routerLink]="['/sobre']">Sobre a Onda Branca</a></li>
+      <!-- Serviços -->
+      <li class="uk-parent">
+        <a href="javascript:void(0)" style="color:#272727;">Serviços</a>
+        <ul class="uk-nav-sub uk-list-divider">
+          <li><a style="color:#272727;" [routerLink]="['/mentoria-de-saude-mental-para-gestores']">Mentoria de saúde mental para gestores</a></li>
+          <li><a style="color:#272727;" [routerLink]="['/antendimento-empressarial']">Atendimento empresarial</a></li>
+          <li><a style="color:#272727;" [routerLink]="['/gestao-de-saude-mental-para-empressa']">Gestão de programa de saúde mental para empresas</a></li>
+          <li><a style="color:#272727;" [routerLink]="['/programa-de-renda-extra']">Programa de Renda Extra</a></li>
+          <li><a style="color:#272727;" [routerLink]="['/programa-de-ginastica-laboral']">O programa de ginástica laboral</a></li>
+          <li><a style="color:#272727;" [routerLink]="['/palestra-e-workshop']">Palestras e workshops</a></li>
+          <li><a style="color:#272727;" [routerLink]="['/programa-de-saude-mental-no-trabalho']">Programa de saúde mental no trabalho</a></li>
+        </ul>
+      </li>
+
+      <!-- Conteúdos -->
+      <li class="uk-parent">
+        <a href="javascript:void(0)" style="color:#272727;">Conteúdos</a>
+        <ul class="uk-nav-sub uk-list-divider">
+          <li><a style="color:#272727;" [routerLink]="['/sobre']">Podcast</a></li>
+          <li><a style="color:#272727;" [routerLink]="['/missao']">Blog</a></li>
+        </ul>
+      </li>
+    </ul>
+    <hr>
+    <h3 style="color: #272727; margin: 5px; font-size: 16px;">Siga-nos nas redes sociais</h3>
+    <hr>
+    <!-- Lista vertical de ícones com texto -->
+    <ul class="uk-list uk-list-divider uk-margin-small-top">
+      <li>
+        <a href="javascript:void(0)" target="_blank" style="color: #00479f; font-size: 16px;">
+          <i class="fab fa-facebook"></i> Facebook
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0)" target="_blank" style="color: #00479f; font-size: 16px;">
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0)" target="_blank" style="color: #00479f; font-size: 16px;">
+          <i class="fab fa-linkedin"></i> Linkedin
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0)" target="_blank" style="color: #00479f; font-size: 16px;">
+          <i class="fab fa-youtube"></i> Youtube
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0)" target="_blank" style="color: #00479f; font-size: 16px;">
+          <i class="fab fa-spotify"></i> Spotify
+        </a>
+      </li>
+    </ul>
+
+    <!-- Botão de contacto -->
+    <a class="uk-button uk-button-default uk-margin-top" 
+       style="background-color: #00479f; color: white; border: none; border-radius: 5px;" 
+       [routerLink]="['/contacto']">Contacto</a>
+
+  </div>
 </div>

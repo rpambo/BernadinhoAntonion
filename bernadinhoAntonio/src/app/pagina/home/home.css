@@ -1,3 +1,9 @@
+.back{
+    background-image: url(/imagens/CAPA-BERNARDINO.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .uk-button-default{
     border-radius: 10px;
     color: white;
@@ -9,7 +15,107 @@
     color: white;
     border: 2px solid #fa8072;
 }
+
 .titulo{
     font-family: "Urbanist";
-    font-size: 2.6rem;
+    font-size: 2.2rem;
 }
+
+@media (min-width: 344px) and (max-width: 767px) {
+    .uk-slideshow-items {
+        min-height: 550px !important;
+    }
+    
+    .back{
+        background-image: url(/imagens/top-mobile.png) !important;
+        background-position: center top !important;
+        background-size: cover !important;
+    }
+
+    .titulo{
+        font-size: 1.6rem !important;
+        max-width: 320px !important;
+    }
+    .conteudo{
+        text-align: center !important;
+        bottom: 0% !important;
+        right: 0% !important;
+        left: 10% !important;
+        
+        margin: auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .uk-slideshow-items {
+        min-height: 550px !important;
+    }
+    .back{
+        background-position: right !important;
+    }
+    .titulo{
+        font-size: 2rem;
+        max-width: 510px;
+    }
+    .conteudo{
+        max-width: 300px !important;
+    }
+    h1{
+        font-size: 2rem !important;
+    }
+}
+
+.btn-gradient-animated {
+  margin-top: 25px;
+  color: #fff;
+  background: linear-gradient(
+    120deg,
+    #6A00F4,
+    #9D4EDD,
+    #B5179E,
+    #6A00F4
+  );
+  background-size: 300% 300%;
+  animation: gradientMove 6s ease infinite;
+  border: none;
+  border-radius: 5px;
+}
+
+/* animação */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* hover brilhante */
+.btn-gradient-animated:hover {
+  animation-duration: 3s;
+  transform: translateY(-2px);
+  box-shadow:
+    0 0 8px rgba(157, 78, 221, 0.6),
+    0 0 20px rgba(181, 23, 158, 0.5),
+    0 0 40px rgba(106, 0, 244, 0.4);
+}
+
+/* opcional: foco acessível */
+.btn-gradient-animated:focus {
+  outline: none;
+  box-shadow:
+    0 0 0 3px rgba(255, 255, 255, 0.25),
+    0 0 25px rgba(157, 78, 221, 0.6);
+}
+
+/* Desktop / tablet (padrão) */
+.back {
+    background-image: url('/imagens/CAPA-BERNARDINO.png');
+    background-size: cover;
+    background-position: left;
+}
+

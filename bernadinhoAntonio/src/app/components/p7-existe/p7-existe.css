@@ -1,14 +1,35 @@
-h2{
-    font-family: "Urbanist";
+@font-face {
+  font-family: 'Joyride';
+  src: url('/Joyride-Font/JoyrideSTD.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
+
+@font-face {
+  font-family: 'joryde';
+  src: url('/Joyride-Font/JoyrideALT.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 p{
-    font-family: "Roboto";
+    font-family: 'sora';
     font-weight: 300;
-    color: #545454;
 }
-.uk-button-default{
-    background-color: #fa8072;
-    color: white;
-    font-family: "Urbanist";
-    font-weight: 500;
+
+@media (max-width: 768px) {
+    .card{
+        padding: 0 !important;
+    }
+    .fm{
+        font-size: 3rem !important;
+    }
+    .conteudo{
+        text-align: center;
+    }
+}
+@media (min-width: 768px) {
+    .fm{
+        font-size: 3rem !important;
+    }
 }
