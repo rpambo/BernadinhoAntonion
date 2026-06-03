@@ -2,6 +2,7 @@
     background-image: url(/imagens/CAPA-BERNARDINO.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-color: #012933;
 }
 
 .uk-button-default{
@@ -27,7 +28,7 @@
     }
     
     .back{
-        background-image: url(/imagens/top-mobile.png) !important;
+        background-image: url(/imagens/bg-header-BA-2025-mobile.png) !important;
         background-position: center top !important;
         background-size: cover !important;
     }
@@ -35,14 +36,18 @@
     .titulo{
         font-size: 1.6rem !important;
         max-width: 320px !important;
+        margin: auto;
     }
     .conteudo{
         text-align: center !important;
-        bottom: 0% !important;
-        right: 0% !important;
-        left: 10% !important;
-        
-        margin: auto;
+        bottom: 50% !important;
+        left: 0 !important;
+        right: 0 !important;
+        max-width: 100% !important;
+        margin: auto !important;
+    }
+    h3{
+        font-size: 1.2rem !important;
     }
 }
 
@@ -119,3 +124,23 @@
     background-position: left;
 }
 
+.scroll-down {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: float 2s ease-in-out infinite;
+  cursor: pointer;
+  z-index: 20;
+}
+
+@keyframes float {
+  0% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(10px); }
+  100% { transform: translateX(-50%) translateY(0); }
+}
+
+.scroll-down span {
+  color: white;
+  opacity: 0.8;
+}

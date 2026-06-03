@@ -8,3 +8,30 @@ p{
     font-weight: 300;
     color: white;
 }
+
+
+/* TEXTO */
+.text-servico.reveal-fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.text-servico.reveal-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+a{
+    color: #a47b67 !important;
+}
+
+@media (min-width: 344px) and (max-width: 767px) {
+    h1{
+        font-size: 1.7rem !important;
+        padding: 10px !important;
+    }
+    img{
+        width: 100% !important;
+    }
+}

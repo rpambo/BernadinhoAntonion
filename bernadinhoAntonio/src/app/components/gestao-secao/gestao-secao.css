@@ -100,9 +100,6 @@ p{
     }
 }
 
-
-
-
 .btn-blue-alive {
   color: #fff;
   border: none;
@@ -322,4 +319,24 @@ p{
   75% {
     transform: rotate(-2deg);
   }
+}
+
+.card.reveal-fade {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 1.5s ease, transform 2.5s ease;
+}
+
+.card.reveal-active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@media (min-width: 344px) and (max-width: 768px) {
+    .uk-container{
+        text-align: justify !important;
+    }
+    h3{
+        text-align: center !important;
+    }
 }

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Navbar } from "../../components/navbar/navbar";
 import { Footer } from "../../components/footer/footer";
 import { Meta, Title } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
@@ -8,11 +7,10 @@ import { P7 } from "../../components/p7/p7";
 import { GestaoSecao } from "../../components/gestao-secao/gestao-secao";
 import { P7Existe } from "../../components/p7-existe/p7-existe";
 import { Contacto } from "../../components/contacto/contacto";
-import { RouterLink } from "@angular/router"
 
 @Component({
   selector: 'app-home',
-  imports: [Navbar, Footer, CommonModule, Estatistica, P7, GestaoSecao, P7Existe, Contacto, RouterLink],
+  imports: [Footer, CommonModule, Estatistica, P7, GestaoSecao, P7Existe, Contacto, ],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })

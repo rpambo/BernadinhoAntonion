@@ -1,13 +1,11 @@
 import { Routes } from '@angular/router';
 import { Home } from './pagina/home/home';
-import { PaginaContacto } from './pagina/pagina-contacto/pagina-contacto';
-import { PaginaP7 } from './pagina/pagina-p7/pagina-p7';
-import { MentoriaParaGestores } from './pagina/mentoria-para-gestores/mentoria-para-gestores';
+import { NotFoundComponent } from './pagina/not-found/not-found';
 
 
 export const routes: Routes = [
     {path:"", component: Home},
-    {path:"contato", component: PaginaContacto},
-    {path:"p7", component: PaginaP7},
-    {path:"mentoria-para-gestores", component: MentoriaParaGestores},
+
+    { path: '404', component: NotFoundComponent },
+    { path: '**', redirectTo: '404' }
 ];

@@ -1,21 +1,24 @@
-<app-navbar></app-navbar>
 <div uk-slideshow="autoplay: true; animation: slide; pause-on-hover: false; autoplay-interval: 10000; ratio: false">
   <div class="uk-slideshow-items" uk-height-viewport="offset-top: true">
     <div class="uk-background-cover back uk-flex uk-flex-middle uk-flex-between uk-flex-center" style="background-position: left;">
       <div class="uk-container">
         <div class="uk-position-cover uk-overlay">
-        <div class="uk-position-bottom-left conteudo" style="bottom: 25%; left: 3%; max-width: 780px; color: white;">
-          <h1  class="titulo" style="color: #8f51c9; font-weight: 600; font-size: 2.8rem;">A saúde mental é uma prioridade <span style="background-color: #8f51c9; color: white;">obrigatória</span>, o bem-estar e a produtividade uma meta <span style="background-color: #8f51c9; color: white;">satisfatória</span>.</h1>
-          <a [routerLink]="['/contato']" class="uk-button uk-button-default btn-gradient-animated">Comece aqui</a>
-        </div>
+          <div class="uk-position-center-left conteudo" style="left: 7%; max-width: 550px; color: white;">
+            <h3 style="font-family: 'sora'; font-size: 1.8rem; margin: 0; color: #a47b67; text-transform: uppercase;">Bernardino António</h3>
+            <h1  class="titulo" style="color: #fff; font-weight: 600; font-size: 3.3em; margin-top: 10px;">A saúde mental é uma prioridade obrigatória, o bem-estar e a produtividade uma meta satisfatória.</h1>
+          </div>
+      </div>
+      <div class="scroll-down">
+        <a href="#sobre-bernadino" class="uk-scroll"><span uk-icon="icon: chevron-down; ratio: 2"></span></a>
       </div>
       </div>
+      
     </div>
   </div>
 </div>
-<app-p7></app-p7>
 <app-estatistica></app-estatistica>
+<app-p7></app-p7>
+<app-contacto></app-contacto>
 <app-gestao-secao></app-gestao-secao>
 <app-p7-existe></app-p7-existe>
-<app-contacto></app-contacto>
 <app-footer></app-footer>
