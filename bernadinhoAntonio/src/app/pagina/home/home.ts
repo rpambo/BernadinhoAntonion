@@ -42,7 +42,7 @@ export class Home implements OnInit {
       property: 'og:description', 
       content: 'Atendimento, programas de saúde mental e soluções corporativas para equilíbrio emocional e performance humana.' 
     });
-    this.meta.updateTag({ property: 'og:image', content: 'https://bernardinoantonio.com/assets/images/og-image.jpg' });
+    this.meta.updateTag({ property: 'og:image', content: 'https://wxopwlmdtfupztzdmtzb.supabase.co/storage/v1/object/sign/GestDremasImage/bernadino-antonio/CAPA-BERNARDINO.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9iYzM3Zjg5Ny05YzgwLTRiYzctYjZlZS0yMjEwMGQ3Mzk0YTkiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJHZXN0RHJlbWFzSW1hZ2UvYmVybmFkaW5vLWFudG9uaW8vQ0FQQS1CRVJOQVJESU5PLnBuZyIsInNjb3BlIjoiZG93bmxvYWQiLCJpYXQiOjE3ODU2MjA0MzgsImV4cCI6MjEwMDk4MDQzOH0.Lg4F9LF0m_mLtndGjVOPaY7_R2ERhOR0mkpajNvYa2I' });
     this.meta.updateTag({ property: 'og:url', content: 'https://bernardinoantonio.com' });
     this.meta.updateTag({ property: 'og:type', content: 'website' });
 
@@ -53,7 +53,7 @@ export class Home implements OnInit {
       name: 'twitter:description', 
       content: 'Psicólogo clínico com experiência em saúde mental, bem-estar corporativo e desenvolvimento emocional em Angola.' 
     });
-    this.meta.updateTag({ name: 'twitter:image', content: 'https://bernardinoantonio.com/assets/images/twitter-card.jpg' });
+    this.meta.updateTag({ name: 'twitter:image', content: 'https://wxopwlmdtfupztzdmtzb.supabase.co/storage/v1/object/sign/GestDremasImage/bernadino-antonio/CAPA-BERNARDINO.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9iYzM3Zjg5Ny05YzgwLTRiYzctYjZlZS0yMjEwMGQ3Mzk0YTkiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJHZXN0RHJlbWFzSW1hZ2UvYmVybmFkaW5vLWFudG9uaW8vQ0FQQS1CRVJOQVJESU5PLnBuZyIsInNjb3BlIjoiZG93bmxvYWQiLCJpYXQiOjE3ODU2MjA0MzgsImV4cCI6MjEwMDk4MDQzOH0.Lg4F9LF0m_mLtndGjVOPaY7_R2ERhOR0mkpajNvYa2I' });
 
     // Autor, robots
     this.meta.updateTag({ name: 'author', content: 'Dr. Bernardino António' });
@@ -77,7 +77,7 @@ export class Home implements OnInit {
       'jobTitle': 'Psicólogo Clínico',
       'description': 'Especialista em saúde mental, bem-estar emocional e performance no trabalho.',
       'url': 'https://bernardinoantonio.com',
-      'image': 'https://bernardinoantonio.com/assets/images/bernardino.jpg',
+      'image': 'https://wxopwlmdtfupztzdmtzb.supabase.co/storage/v1/object/sign/GestDremasImage/bernadino-antonio/CAPA-BERNARDINO.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9iYzM3Zjg5Ny05YzgwLTRiYzctYjZlZS0yMjEwMGQ3Mzk0YTkiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJHZXN0RHJlbWFzSW1hZ2UvYmVybmFkaW5vLWFudG9uaW8vQ0FQQS1CRVJOQVJESU5PLnBuZyIsInNjb3BlIjoiZG93bmxvYWQiLCJpYXQiOjE3ODU2MjA0MzgsImV4cCI6MjEwMDk4MDQzOH0.Lg4F9LF0m_mLtndGjVOPaY7_R2ERhOR0mkpajNvYa2I',
       'address': {
         '@type': 'PostalAddress',
         'addressLocality': 'Luanda',
