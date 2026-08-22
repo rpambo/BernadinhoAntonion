@@ -25,10 +25,10 @@ User-agent: facebookexternalhit
 Allow: /
 
 # Arquivo de sitemap
-Sitemap: https://bernardinoantonio/sitemap.xml
+Sitemap: https://bernardinoantonio.ao/sitemap.xml
 
 # Tempo de vida do cache
 Cache-control: max-age=86400
 
 # Especificar o servidor preferido
-# Host: https://bernardinoantonio.com
+# Host: https://bernardinoantonio.ao

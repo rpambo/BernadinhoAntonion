@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Footer } from "../../components/footer/footer";
 import { Meta, Title } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
-import { Estatistica } from "../../components/estatistica/estatistica";
+import { Estatistica } from "../../components/sobre-dr-bernardino/estatistica";
 import { P7 } from "../../components/p7/p7";
-import { GestaoSecao } from "../../components/gestao-secao/gestao-secao";
-import { P7Existe } from "../../components/p7-existe/p7-existe";
-import { Contacto } from "../../components/contacto/contacto";
+import { GestaoSecao } from "../../components/portifolio/gestao-secao";
+import { P7Existe } from "../../components/podacast-section/p7-existe";
+import { Contacto } from "../../components/servico/contacto";
 
 @Component({
   selector: 'app-home',
@@ -43,7 +43,7 @@ export class Home implements OnInit {
       content: 'Atendimento, programas de saúde mental e soluções corporativas para equilíbrio emocional e performance humana.' 
     });
     this.meta.updateTag({ property: 'og:image', content: 'https://wxopwlmdtfupztzdmtzb.supabase.co/storage/v1/object/sign/GestDremasImage/bernadino-antonio/CAPA-BERNARDINO.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9iYzM3Zjg5Ny05YzgwLTRiYzctYjZlZS0yMjEwMGQ3Mzk0YTkiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJHZXN0RHJlbWFzSW1hZ2UvYmVybmFkaW5vLWFudG9uaW8vQ0FQQS1CRVJOQVJESU5PLnBuZyIsInNjb3BlIjoiZG93bmxvYWQiLCJpYXQiOjE3ODU2MjA0MzgsImV4cCI6MjEwMDk4MDQzOH0.Lg4F9LF0m_mLtndGjVOPaY7_R2ERhOR0mkpajNvYa2I' });
-    this.meta.updateTag({ property: 'og:url', content: 'https://bernardinoantonio.com' });
+    this.meta.updateTag({ property: 'og:url', content: 'https://bernardinoantonio.ao' });
     this.meta.updateTag({ property: 'og:type', content: 'website' });
 
     // Twitter Card
