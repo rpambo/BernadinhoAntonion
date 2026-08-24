@@ -35,4 +35,4 @@ jobs:
           port: 21
           local-dir: ./dist/bernadinhoAntonio/browser/
           server-dir: ./public_html/
-          security: strict
+          security: loose
