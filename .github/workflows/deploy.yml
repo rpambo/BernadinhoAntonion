@@ -28,11 +28,11 @@ jobs:
       - name: Deploy to Angoweb via FTPS
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USERNAME }}
+          server: ftp.bernardinoantonio.ao
+          username: rpambo@bernardinoantonio.ao
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftps
-          port: 990
+          port: 21
           local-dir: ./dist/bernadinhoAntonio/browser/
-          server-dir: ./public_html/
+          server-dir: ./
           security: strict
