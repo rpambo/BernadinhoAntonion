@@ -25,14 +25,13 @@ jobs:
       - name: Build Angular
         run: npm run build
 
-      - name: Deploy to Angoweb via FTPS
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: Deploy via SCP
+        uses: appleboy/scp-action@master
         with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ftps
-          port: 21
-          local-dir: ./dist/bernadinhoAntonio/browser/
-          server-dir: ./public_html/
-          security: loose
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_KEY }}
+          passphrase: ${{ secrets.SSH_PASSPHRASE }}
+          source: "dist/bernadinhoAntonio/browser/"
+          target: "/mnt/home102/bernardi/public_html/"
+          strip_components: 3
