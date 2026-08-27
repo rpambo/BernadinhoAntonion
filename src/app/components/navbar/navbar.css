@@ -1,0 +1,82 @@
+.navbar-shell {
+	z-index: 10;
+	background: rgba(1, 41, 51, 0.92);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.navbar-shell nav {
+	min-height: 78px;
+}
+
+.brand {
+	gap: 10px;
+	color: #fff;
+	font-family: "Sora", sans-serif;
+	font-size: 0.95rem;
+	font-weight: 600;
+}
+
+.brand:hover,
+.uk-navbar-nav > li > a:hover {
+	color: #d9a47c;
+}
+
+.brand-mark {
+	display: grid;
+	width: 38px;
+	height: 38px;
+	place-items: center;
+	border: 1px solid #d9a47c;
+	color: #d9a47c;
+	font-family: "Sora", sans-serif;
+	font-size: 0.75rem;
+	letter-spacing: 0.08em;
+}
+
+.uk-navbar-nav > li > a {
+	min-height: 78px;
+	color: rgba(255, 255, 255, 0.86);
+	font-family: "Sora", sans-serif;
+	font-size: 0.72rem;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.navbar-cta {
+	margin-left: 18px;
+	background: #d9a47c;
+	color: #012933;
+	font-family: "Sora", sans-serif;
+	font-size: 0.72rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.navbar-cta:hover {
+	background: #edc09d;
+	color: #012933;
+}
+
+.uk-navbar-toggle {
+	color: #fff;
+}
+
+.mobile-brand {
+	color: #d9a47c;
+	font-family: "Sora", sans-serif;
+	font-size: 1.1rem;
+	font-weight: 600;
+}
+
+.uk-offcanvas-bar {
+	background: #012933;
+}
+
+.uk-nav-primary > li > a {
+	color: #fff;
+	font-family: "Sora", sans-serif;
+}
+
+.uk-nav-primary > li > a:hover {
+	color: #d9a47c;
+}

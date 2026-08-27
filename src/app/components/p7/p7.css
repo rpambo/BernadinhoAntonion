@@ -4,6 +4,7 @@ h3{
     font-size: 1.8rem;
     color: WHITE;
 }
+
 p{
     font-family: 'Sora';
     font-size: 1rem;
@@ -18,11 +19,10 @@ p{
     justify-content: flex-end; /* mantém alinhado à direita */
 }
 
-
 .card.reveal-fade {
   opacity: 0;
-  transform: translateX(50px);
-  transition: opacity 1.5s ease, transform 2.5s ease;
+  transform: translateX(40px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 .card.reveal-active {
@@ -30,12 +30,11 @@ p{
   transform: translateX(0);
 }
 
-
 /* TEXTO */
 .text-servico.reveal-fade {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 1.5s ease, transform 1.5s ease;
+    transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 .text-servico.reveal-active {

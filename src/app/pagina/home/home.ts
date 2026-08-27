@@ -7,10 +7,12 @@ import { P7 } from '../../components/p7/p7';
 import { GestaoSecao } from '../../components/portifolio/gestao-secao';
 import { P7Existe } from '../../components/podacast-section/p7-existe';
 import { Contacto } from '../../components/servico/contacto';
+import { Navbar } from '../../components/navbar/navbar';
 
 @Component({
   selector: 'app-home',
   imports: [
+    Navbar,
     Footer,
     CommonModule,
     Estatistica,
