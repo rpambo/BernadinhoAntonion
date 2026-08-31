@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Footer } from '../../components/footer/footer';
 import { Meta, Title } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
+
 import { Estatistica } from '../../components/sobre-dr-bernardino/estatistica';
 import { P7 } from '../../components/p7/p7';
 import { GestaoSecao } from '../../components/portifolio/gestao-secao';
@@ -11,6 +12,7 @@ import { Navbar } from '../../components/navbar/navbar';
 
 @Component({
   selector: 'app-home',
+
   imports: [
     Navbar,
     Footer,
@@ -21,6 +23,7 @@ import { Navbar } from '../../components/navbar/navbar';
     P7Existe,
     Contacto
   ],
+
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
@@ -36,12 +39,16 @@ export class Home implements OnInit {
     this.addStructuredData();
   }
 
+  /*
+   * =====================================================
+   * SEO META TAGS
+   * =====================================================
+   */
+
   private setMetaTags(): void {
 
     /*
-     * ================================
      * BASIC SEO
-     * ================================
      */
 
     this.titleService.setTitle(
@@ -65,20 +72,22 @@ export class Home implements OnInit {
         'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'
     });
 
+
     /*
-     * ================================
+     * =================================================
      * CANONICAL
-     * ================================
+     * =================================================
      */
 
     this.updateCanonical(
       'https://bernardinoantonio.ao/'
     );
 
+
     /*
-     * ================================
+     * =================================================
      * OPEN GRAPH
-     * ================================
+     * =================================================
      */
 
     this.meta.updateTag({
@@ -90,7 +99,7 @@ export class Home implements OnInit {
     this.meta.updateTag({
       property: 'og:description',
       content:
-        'Médico Especialista em Medicina do Trabalho, Coach e Treinador de Inteligência Emocional. 16 anos de experiência em saúde mental, gestão do stress e bem-estar corporativo.'
+        'Médico Especialista em Medicina do Trabalho, Coach e Treinador de Inteligência Emocional, com 16 anos de experiência em saúde mental, gestão do stress e bem-estar corporativo.'
     });
 
     this.meta.updateTag({
@@ -112,18 +121,38 @@ export class Home implements OnInit {
 
     this.meta.updateTag({
       property: 'og:locale',
-      content: 'pt_AO'
+      content:
+        'pt_AO'
     });
 
-    /*
-     * IMPORTANTE:
-     * Substituir por uma URL pública e permanente
-     * da imagem.
-     */
     this.meta.updateTag({
       property: 'og:image',
       content:
         'https://bernardinoantonio.ao/imagens/bernadino-antonio.png'
+    });
+
+    this.meta.updateTag({
+      property: 'og:image:secure_url',
+      content:
+        'https://bernardinoantonio.ao/imagens/bernadino-antonio.png'
+    });
+
+    this.meta.updateTag({
+      property: 'og:image:type',
+      content:
+        'image/png'
+    });
+
+    this.meta.updateTag({
+      property: 'og:image:width',
+      content:
+        '1200'
+    });
+
+    this.meta.updateTag({
+      property: 'og:image:height',
+      content:
+        '630'
     });
 
     this.meta.updateTag({
@@ -132,15 +161,17 @@ export class Home implements OnInit {
         'Dr. Bernardino António'
     });
 
+
     /*
-     * ================================
+     * =================================================
      * TWITTER / X
-     * ================================
+     * =================================================
      */
 
     this.meta.updateTag({
       name: 'twitter:card',
-      content: 'summary_large_image'
+      content:
+        'summary_large_image'
     });
 
     this.meta.updateTag({
@@ -167,59 +198,99 @@ export class Home implements OnInit {
         'Dr. Bernardino António'
     });
 
+
     /*
-     * ================================
+     * =================================================
      * LOCAL SEO
-     * ================================
+     * =================================================
      */
 
     this.meta.updateTag({
       name: 'geo.region',
-      content: 'AO-LUA'
+      content:
+        'AO-LUA'
     });
 
     this.meta.updateTag({
       name: 'geo.placename',
-      content: 'Luanda'
+      content:
+        'Luanda'
     });
 
     this.meta.updateTag({
       name: 'geo.position',
-      content: '-8.839988;13.289437'
+      content:
+        '-8.839988;13.289437'
     });
 
     this.meta.updateTag({
       name: 'ICBM',
-      content: '-8.839988, 13.289437'
+      content:
+        '-8.839988, 13.289437'
     });
   }
 
+
+  /*
+   * =====================================================
+   * CANONICAL
+   * =====================================================
+   */
+
   private updateCanonical(url: string): void {
 
-    let canonical = document.querySelector(
-      'link[rel="canonical"]'
-    ) as HTMLLinkElement | null;
+    let canonical =
+      document.querySelector(
+        'link[rel="canonical"]'
+      ) as HTMLLinkElement | null;
 
     if (!canonical) {
-      canonical = document.createElement('link');
-      canonical.setAttribute('rel', 'canonical');
-      document.head.appendChild(canonical);
+
+      canonical =
+        document.createElement('link');
+
+      canonical.setAttribute(
+        'rel',
+        'canonical'
+      );
+
+      document.head.appendChild(
+        canonical
+      );
     }
 
-    canonical.setAttribute('href', url);
+    canonical.setAttribute(
+      'href',
+      url
+    );
   }
+
+
+  /*
+   * =====================================================
+   * STRUCTURED DATA / JSON-LD
+   * =====================================================
+   */
 
   private addStructuredData(): void {
 
+
     /*
-     * ==========================================
+     * =================================================
      * PERSON
-     * ==========================================
+     * =================================================
+     *
+     * Entidade principal:
+     * Dr. Bernardino António
      */
 
     const personSchema = {
-      '@context': 'https://schema.org',
-      '@type': 'Person',
+
+      '@context':
+        'https://schema.org',
+
+      '@type':
+        'Person',
 
       '@id':
         'https://bernardinoantonio.ao/#person',
@@ -239,88 +310,239 @@ export class Home implements OnInit {
       description:
         'Médico Especialista em Medicina do Trabalho, Coach e Treinador de Inteligência Emocional, Treinador de Gestão do Stress e promotor da saúde mental no trabalho, com 16 anos de experiência em intervenções corporativas.',
 
+
+      /*
+       * LOCALIZAÇÃO
+       */
+
       address: {
-        '@type': 'PostalAddress',
-        addressLocality: 'Luanda',
-        addressCountry: 'AO'
+
+        '@type':
+          'PostalAddress',
+
+        addressLocality:
+          'Luanda',
+
+        addressCountry:
+          'AO'
       },
 
+
+      /*
+       * ÁREAS DE CONHECIMENTO
+       */
+
       knowsAbout: [
+
         'Medicina do Trabalho',
+
         'Saúde Mental no Trabalho',
+
         'Inteligência Emocional',
+
         'Gestão do Stress',
+
         'Gestão do Stress Ocupacional',
+
         'Bem-estar Corporativo',
+
         'Qualidade de Vida no Trabalho',
+
         'Felicidade Corporativa',
+
         'Desenvolvimento Humano',
+
         'Produtividade Humana',
+
         'Saúde Ocupacional',
+
         'Burnout'
       ],
 
+
+      /*
+       * OCUPAÇÃO
+       */
+
       hasOccupation: {
-        '@type': 'Occupation',
-        name: 'Médico Especialista em Medicina do Trabalho'
+
+        '@type':
+          'Occupation',
+
+        name:
+          'Médico Especialista em Medicina do Trabalho'
       },
+
+
+      /*
+       * FORMAÇÃO
+       */
 
       alumniOf: {
-        '@type': 'CollegeOrUniversity',
-        name: 'Universidade Nova de Lisboa'
+
+        '@type':
+          'CollegeOrUniversity',
+
+        name:
+          'Universidade Nova de Lisboa'
       },
+
+
+      /*
+       * ASSOCIAÇÃO PROFISSIONAL
+       */
 
       memberOf: {
-        '@type': 'Organization',
-        name: 'International Stress Management Association'
+
+        '@type':
+          'Organization',
+
+        name:
+          'International Stress Management Association'
       },
 
-      worksFor: {
-        '@type': 'Organization',
-        name: 'GestDreams',
-        url: 'https://gestdreams.com'
-      },
+
+      /*
+       * =================================================
+       * RELAÇÕES PROFISSIONAIS
+       * =================================================
+       */
+
+      worksFor: [
+
+        {
+
+          '@type':
+            'Organization',
+
+          '@id':
+            'https://gestdreams.com/#organization',
+
+          name:
+            'GestDreams',
+
+          url:
+            'https://gestdreams.com/'
+        },
+
+        {
+
+          '@type':
+            'Organization',
+
+          '@id':
+            'https://ondabrancaangola.com/#organization',
+
+          name:
+            'Movimento Onda Branca',
+
+          url:
+            'https://ondabrancaangola.com/'
+        }
+      ],
+
+
+      /*
+       * =================================================
+       * REDES SOCIAIS OFICIAIS
+       * =================================================
+       *
+       * SUBSTITUIR pelas URLs reais.
+       *
+       * sameAs deve conter perfis que representem
+       * oficialmente o Dr. Bernardino António.
+       */
 
       sameAs: [
-        'https://gestdreams.com',
-        'https://ondabrancaangola.com'
+        'https://www.linkedin.com/in/bernardino-antonio-12a18896/',
+
+        'https://www.instagram.com/bernardino_antonio_oficial/',
+
+        'https://www.youtube.com/@bernardino_antonio',
+
+        'https://www.tiktok.com/@bernardino.f..ant'
       ]
     };
 
+
     /*
-     * ==========================================
-     * ORGANIZATION
-     * ==========================================
+     * =================================================
+     * GESTDREAMS
+     * =================================================
      */
 
-    const organizationSchema = {
-      '@context': 'https://schema.org',
-      '@type': 'Organization',
+    const gestDreamsSchema = {
+
+      '@context':
+        'https://schema.org',
+
+      '@type':
+        'Organization',
 
       '@id':
-        'https://bernardinoantonio.ao/#organization',
+        'https://gestdreams.com/#organization',
 
       name:
         'GestDreams',
 
       url:
-        'https://gestdreams.com',
+        'https://gestdreams.com/',
 
       employee: {
+
         '@id':
           'https://bernardinoantonio.ao/#person'
       }
     };
 
+
     /*
-     * ==========================================
+     * =================================================
+     * MOVIMENTO ONDA BRANCA
+     * =================================================
+     */
+
+    const ondaBrancaSchema = {
+
+      '@context':
+        'https://schema.org',
+
+      '@type':
+        'Organization',
+
+      '@id':
+        'https://ondabrancaangola.com/#organization',
+
+      name:
+        'Movimento Onda Branca',
+
+      url:
+        'https://ondabrancaangola.com/',
+
+      description:
+        'Movimento focado na promoção da saúde mental, bem-estar, qualidade de vida e desenvolvimento humano no contexto corporativo.',
+
+      employee: {
+
+        '@id':
+          'https://bernardinoantonio.ao/#person'
+      }
+    };
+
+
+    /*
+     * =================================================
      * WEBSITE
-     * ==========================================
+     * =================================================
      */
 
     const websiteSchema = {
-      '@context': 'https://schema.org',
-      '@type': 'WebSite',
+
+      '@context':
+        'https://schema.org',
+
+      '@type':
+        'WebSite',
 
       '@id':
         'https://bernardinoantonio.ao/#website',
@@ -334,38 +556,21 @@ export class Home implements OnInit {
       description:
         'Site oficial do Dr. Bernardino António, Médico Especialista em Medicina do Trabalho, Coach e Treinador de Inteligência Emocional.',
 
-      inLanguage: 'pt-AO',
+      inLanguage:
+        'pt-AO',
 
       publisher: {
+
         '@id':
           'https://bernardinoantonio.ao/#person'
       }
     };
 
-    /*
-     * ==========================================
-     * MOVIMENTO ONDA BRANCA
-     * ==========================================
-     */
-
-    const ondaBrancaSchema = {
-      '@context': 'https://schema.org',
-      '@type': 'Organization',
-
-      name:
-        'Movimento Onda Branca',
-
-      url:
-        'https://ondabrancaangola.com',
-
-      description:
-        'Movimento focado na promoção da saúde mental, bem-estar, qualidade de vida e desenvolvimento humano no contexto corporativo.'
-    };
 
     /*
-     * ==========================================
-     * INSERT JSON-LD
-     * ==========================================
+     * =================================================
+     * INSERIR JSON-LD
+     * =================================================
      */
 
     this.insertStructuredData(
@@ -374,38 +579,56 @@ export class Home implements OnInit {
     );
 
     this.insertStructuredData(
-      'organization-schema',
-      organizationSchema
-    );
-
-    this.insertStructuredData(
-      'website-schema',
-      websiteSchema
+      'gestdreams-schema',
+      gestDreamsSchema
     );
 
     this.insertStructuredData(
       'onda-branca-schema',
       ondaBrancaSchema
     );
+
+    this.insertStructuredData(
+      'website-schema',
+      websiteSchema
+    );
   }
+
+
+  /*
+   * =====================================================
+   * INSERIR STRUCTURED DATA NO HEAD
+   * =====================================================
+   */
 
   private insertStructuredData(
     id: string,
     data: object
   ): void {
 
-    const existingScript = document.getElementById(id);
+    const existingScript =
+      document.getElementById(id);
 
     if (existingScript) {
+
       existingScript.remove();
     }
 
-    const script = document.createElement('script');
 
-    script.id = id;
-    script.type = 'application/ld+json';
-    script.text = JSON.stringify(data);
+    const script =
+      document.createElement('script');
 
-    document.head.appendChild(script);
+    script.id =
+      id;
+
+    script.type =
+      'application/ld+json';
+
+    script.text =
+      JSON.stringify(data);
+
+    document.head.appendChild(
+      script
+    );
   }
 }
