@@ -29,10 +29,12 @@
 
             "styles": [
               "src/styles.css",
+              "node_modules/cookieconsent/build/cookieconsent.min.css",
               "public/css/uikit.min.css"
             ],
 
             "scripts": [
+              "node_modules/cookieconsent/build/cookieconsent.min.js",
               "public/js/uikit.min.js",
               "public/js/uikit-icons.min.js"
             ]
